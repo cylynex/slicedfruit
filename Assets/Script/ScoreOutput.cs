@@ -7,9 +7,13 @@ public class ScoreOutput : MonoBehaviour {
 
     public Text score;
     public Text highScore;
+    public int loadScreen = 0;
 
     void Awake() {
-        score.text = Game.score.ToString();
+        if (loadScreen == 0) {
+            score.text = Game.score.ToString();
+        }
+
         int hs = PlayerPrefs.GetInt("HighScore");
         highScore.text = hs.ToString();
     }
