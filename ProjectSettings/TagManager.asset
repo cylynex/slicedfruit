@@ -6,6 +6,7 @@ TagManager:
   tags:
   - wholeFruit
   - slicedFruit
+  - Bomb
   layers:
   - Default
   - TransparentFX

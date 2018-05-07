@@ -815,6 +815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 0}
   highScore: {fileID: 1972222475}
+  loadScreen: 1
 --- !u!1 &1990071931
 GameObject:
   m_ObjectHideFlags: 0

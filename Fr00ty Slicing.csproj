@@ -325,6 +325,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Blade.cs" />
+    <Compile Include="Assets\Script\Bomb.cs" />
     <Compile Include="Assets\Script\Button.cs" />
     <Compile Include="Assets\Script\Fruit.cs" />
     <Compile Include="Assets\Script\Game.cs" />
