@@ -21,6 +21,7 @@ public class Fruit : MonoBehaviour {
         foreach(Rigidbody rb in sliced) {
             rb.transform.rotation = Random.rotation;
             rb.AddExplosionForce(Random.Range(200, 400), transform.position, 5f);
+            Destroy(froot,5f); 
         }
 
         Destroy(gameObject);
