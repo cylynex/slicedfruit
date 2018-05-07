@@ -10,6 +10,8 @@ public class Game : MonoBehaviour {
     public Transform[] spawnPlaces;
     public static int score;
     public static int lives;
+    public static int level;
+    public static int highScore;
 
     [Header("Settings")]
     public float minWait = 1f;
@@ -28,6 +30,7 @@ public class Game : MonoBehaviour {
         score = 0;
         lives = 3;
         nextLife = 100;
+        level = 1;
     }
 
 
@@ -42,6 +45,7 @@ public class Game : MonoBehaviour {
             nextLife = nextLife * 2;
             lives++;
             nextLifeCounter.text = nextLife.ToString();
+            level++;
         }
 
         // Update High Score
@@ -65,7 +69,15 @@ public class Game : MonoBehaviour {
             GameObject fruit = Instantiate(fruitToSpawn[Random.Range(0,fruitToSpawn.Length)], t.position, t.rotation);
 
             // Toss it
-            fruit.GetComponent<Rigidbody2D>().AddForce(t.transform.up * Random.Range(minForce,maxForce), ForceMode2D.Impulse);
+            int whichway = Random.Range(1, 2);
+            switch (whichway) {
+                case 1:
+                    fruit.GetComponent<Rigidbody2D>().AddForce(t.transform.up * Random.Range(minForce, maxForce), ForceMode2D.Impulse);
+                    break;
+                case 2:
+                    fruit.GetComponent<Rigidbody2D>().AddForce(t.transform.right * Random.Range(minForce, maxForce), ForceMode2D.Impulse);
+                    break;
+            }
 
             // Destroy later
             Destroy(fruit, 10f);

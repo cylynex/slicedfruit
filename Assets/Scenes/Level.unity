@@ -177,6 +177,11 @@ Prefab:
       propertyPath: livesCounter
       value: 
       objectReference: {fileID: 867214106}
+    - target: {fileID: 114065395482078010, guid: e0b67e5cae0194ddfba3cbd98dfac922,
+        type: 2}
+      propertyPath: nextLifeCounter
+      value: 
+      objectReference: {fileID: 941940590}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e0b67e5cae0194ddfba3cbd98dfac922, type: 2}
   m_IsPrefabParent: 0
