@@ -7,8 +7,11 @@ public class Game : MonoBehaviour {
     public GameObject fruitToSpawn;
     public Transform[] spawnPlaces;
 
+    [Header("Settings")]
     public float minWait = 1f;
     public float maxWait = 2f;
+    public float minForce = 5;
+    public float maxForce = 20;
 
     void Start() {
         StartCoroutine(SpawnFruits());
@@ -26,7 +29,7 @@ public class Game : MonoBehaviour {
             GameObject fruit = Instantiate(fruitToSpawn, t.position, t.rotation);
 
             // Toss it
-            fruit.GetComponent<Rigidbody2D>().AddForce(transform.up * 10, ForceMode2D.Impulse);
+            fruit.GetComponent<Rigidbody2D>().AddForce(t.transform.up * Random.Range(minForce,maxForce), ForceMode2D.Impulse);
 
             // Destroy later
             Destroy(fruit, 10f);

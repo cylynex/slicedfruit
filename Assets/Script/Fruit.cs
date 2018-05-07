@@ -12,6 +12,11 @@ public class Fruit : MonoBehaviour {
         }
     }
 
+
+    void OnTriggerEnter2D(Collider2D collision) {
+        Blade blade = collision.GetComponent<Blade>();
+    }
+
     public void CreateSlicedFruit() {
         GameObject froot = (GameObject)Instantiate(slicedFruitPrefab,transform.position,transform.rotation);
 
