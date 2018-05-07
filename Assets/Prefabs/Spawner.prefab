@@ -51,8 +51,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257a7022ad13f41eea51d908be964cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitToSpawn: {fileID: 1261023317077878, guid: b262a6d09b0c94a16aedaa8efadf1c96,
-    type: 2}
+  fruitToSpawn:
+  - {fileID: 1261023317077878, guid: b262a6d09b0c94a16aedaa8efadf1c96, type: 2}
+  - {fileID: 1548787651756552, guid: 560b19d8af02a46e2bc1f3560227497c, type: 2}
   spawnPlaces:
   - {fileID: 0}
   - {fileID: 0}
@@ -61,4 +62,7 @@ MonoBehaviour:
   maxWait: 2
   minForce: 5
   maxForce: 15
+  nextLife: 100
   scoreBoard: {fileID: 0}
+  livesCounter: {fileID: 0}
+  nextLifeCounter: {fileID: 0}
