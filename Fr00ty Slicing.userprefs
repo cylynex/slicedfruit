@@ -4,11 +4,11 @@
       <File FileName="Assets/Script/Fruit.cs" Line="20" Column="38" />
       <File FileName="Assets/Script/Game.cs" Line="37" Column="28" />
       <File FileName="Assets/Script/Blade.cs" Line="5" Column="19" />
-      <File FileName="Assets/Script/Loselife.cs" Line="9" Column="22" />
+      <File FileName="Assets/Script/Loselife.cs" Line="10" Column="10" />
       <File FileName="../../cydefense/cyDefense/Assets/Scripts/GameManager.cs" Line="57" Column="10" />
       <File FileName="Assets/Script/Button.cs" Line="8" Column="45" />
       <File FileName="Assets/Script/ScoreOutput.cs" Line="13" Column="28" />
-      <File FileName="Assets/Script/Bomb.cs" Line="7" Column="2" />
+      <File FileName="Assets/Script/Bomb.cs" Line="12" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
