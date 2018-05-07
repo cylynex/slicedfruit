@@ -19,7 +19,7 @@ public class Bomb : MonoBehaviour {
             // Poof the bomb itself
             MeshRenderer dabomb = GetComponent<MeshRenderer>();
             dabomb.enabled = false;
-            Destroy(gameObject,2f);
+            Destroy(gameObject,3f);
 
             // Charge player lives
             Game.lives--;

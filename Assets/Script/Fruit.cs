@@ -13,6 +13,7 @@ public class Fruit : MonoBehaviour {
             // did not impact blade, do nothing
             return;
         } else {
+            
             // Slice baby slice
             CreateSlicedFruit();
 
@@ -22,6 +23,16 @@ public class Fruit : MonoBehaviour {
     }
 
     public void CreateSlicedFruit() {
+
+        // Hide the fr00t
+        MeshRenderer fruitMesh = GetComponent<MeshRenderer>();
+        fruitMesh.enabled = false;
+        gameObject.tag = "deadFruit";
+
+        // Make noise
+        AudioSource sliceIt = GetComponent<AudioSource>();
+        sliceIt.Play();
+
         GameObject froot = (GameObject)Instantiate(slicedFruitPrefab,transform.position,transform.rotation);
 
         // create rigidbodies for explosion
@@ -33,7 +44,7 @@ public class Fruit : MonoBehaviour {
             Destroy(froot,5f); 
         }
 
-        Destroy(gameObject);
+        Destroy(gameObject,1f);
     }
 
 }
