@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 694391881}
   - component: {fileID: 694391880}
   m_Layer: 5
-  m_Name: YS LAbel (3)
+  m_Name: HS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 1001695036}
   - component: {fileID: 1001695035}
   m_Layer: 5
-  m_Name: YS LAbel (1)
+  m_Name: YS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 1023861348}
   - component: {fileID: 1023861347}
   m_Layer: 5
-  m_Name: YS LAbel (2)
+  m_Name: HS Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -708,8 +708,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24735d3beb8cb43888b793482566dd82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  highScore: {fileID: 0}
+  score: {fileID: 1001695035}
+  highScore: {fileID: 694391880}
 --- !u!4 &1327091533
 Transform:
   m_ObjectHideFlags: 0

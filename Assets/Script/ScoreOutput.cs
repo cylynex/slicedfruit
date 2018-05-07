@@ -10,7 +10,8 @@ public class ScoreOutput : MonoBehaviour {
 
     void Awake() {
         score.text = Game.score.ToString();
-        highScore.text = Game.highScore.ToString();
+        int hs = PlayerPrefs.GetInt("HighScore");
+        highScore.text = hs.ToString();
     }
 
 }
