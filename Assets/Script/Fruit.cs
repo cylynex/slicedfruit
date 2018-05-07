@@ -15,6 +15,13 @@ public class Fruit : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision) {
         Blade blade = collision.GetComponent<Blade>();
+        if (!blade) {
+            // did not impact blade, do nothing
+            return;
+        } else {
+            // Slice baby slice
+            CreateSlicedFruit();
+        }
     }
 
     public void CreateSlicedFruit() {
