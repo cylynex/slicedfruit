@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Game : MonoBehaviour {
 
     public GameObject fruitToSpawn;
     public Transform[] spawnPlaces;
+    public static int score;
 
     [Header("Settings")]
     public float minWait = 1f;
@@ -13,8 +15,17 @@ public class Game : MonoBehaviour {
     public float minForce = 5;
     public float maxForce = 20;
 
+    [Header("UI")]
+    public Text scoreBoard;
+
     void Start() {
         StartCoroutine(SpawnFruits());
+        score = 0;
+    }
+
+
+    void Update() {
+        scoreBoard.text = score.ToString();
     }
 
 
@@ -36,4 +47,7 @@ public class Game : MonoBehaviour {
 
         }
     }
+
+
+
 }

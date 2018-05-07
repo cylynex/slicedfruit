@@ -133,3 +133,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slicedFruitPrefab: {fileID: 1849980850395808, guid: 1aa9e815590004874a834e4ff0939f32,
     type: 2}
+  pointValue: 10

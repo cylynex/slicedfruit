@@ -5,13 +5,7 @@ using UnityEngine;
 public class Fruit : MonoBehaviour {
 
     public GameObject slicedFruitPrefab;
-
-    void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            CreateSlicedFruit();
-        }
-    }
-
+    public int pointValue;
 
     void OnTriggerEnter2D(Collider2D collision) {
         Blade blade = collision.GetComponent<Blade>();
@@ -21,6 +15,9 @@ public class Fruit : MonoBehaviour {
         } else {
             // Slice baby slice
             CreateSlicedFruit();
+
+            // Give player Points
+            Game.score += pointValue;
         }
     }
 
