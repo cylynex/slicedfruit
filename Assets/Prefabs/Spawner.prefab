@@ -52,16 +52,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruitToSpawn:
-  - {fileID: 1261023317077878, guid: b262a6d09b0c94a16aedaa8efadf1c96, type: 2}
+  - {fileID: 1893790726780032, guid: 8a914a892d38a4ead8897c7e6c2e39cc, type: 2}
   - {fileID: 1548787651756552, guid: 560b19d8af02a46e2bc1f3560227497c, type: 2}
+  - {fileID: 1261023317077878, guid: b262a6d09b0c94a16aedaa8efadf1c96, type: 2}
   spawnPlaces:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   minWait: 1
   maxWait: 2
-  minForce: 5
-  maxForce: 15
+  minForce: 2
+  maxForce: 8
   nextLife: 100
   scoreBoard: {fileID: 0}
   livesCounter: {fileID: 0}

@@ -28,6 +28,8 @@ public class Fruit : MonoBehaviour {
         MeshRenderer fruitMesh = GetComponent<MeshRenderer>();
         fruitMesh.enabled = false;
         gameObject.tag = "deadFruit";
+        Collider2D coll = GetComponent<Collider2D>();
+        coll.enabled = false;
 
         // Make noise
         AudioSource sliceIt = GetComponent<AudioSource>();
